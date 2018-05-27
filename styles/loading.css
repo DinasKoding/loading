@@ -1,5 +1,6 @@
 body{
     background-color: #EEEEEE;
+    overflow: hidden;
 }
 
 .framea {
@@ -48,21 +49,21 @@ img {
 }
 
 #biru{
-    margin-top: 1vw;
-    margin-left: 2vw;
-    max-height: 15vw;
-    max-width: 15vw;
-    -webkit-animation: loader 1.5s linear infinite;
-    animation: loader 1.5s linear infinite;
-    -moz-animation: loader 2s linear infinite;
-    -o-animation: loader 2s linear infinite;
+    margin-top: -0.9vw;
+    margin-left: 0vw;
+    max-height: 13vw;
+    max-width: 13vw;
+    -webkit-animation: reverse-loader 4.5s linear infinite;
+    animation: reverse-loader 4.5s linear infinite;
+    -moz-animation: reverse-loader 4.5s linear infinite;
+    -o-animation: reverse-loader 4.5s linear infinite;
 }
 
 #hmm {
-    margin-top: 2vw;
-    margin-left: 2vw;
-    max-height: 31vw;
-    max-width: 31vw;
+    margin-top: -1vw;
+    margin-left: 0.6vw;
+    max-height: 35vw;
+    max-width: 35vw;
     -webkit-animation: loader 4s linear infinite;
     -moz-animation: loader 4s linear infinite;
     -o-animation: loader 4s linear infinite;
@@ -70,14 +71,14 @@ img {
 }
 
 #ring {
-    margin-top: 1.4vw;
-    margin-left: 2vw;
-    max-height: 23.5vw;
-    max-width: 23.5vw;
-    -webkit-animation: loader 1.8s linear infinite;
-    -moz-animation: loader 1.8s linear infinite;
-    -o-animation: loader 1.8s linear infinite;
-    animation: loader 1.8s linear infinite;
+    margin-top: -1vw;
+    margin-left: 0vw;
+    max-height: 21vw;
+    max-width: 21vw;
+    -webkit-animation: reverse-loader 2.8s linear infinite;
+    -moz-animation: reverse-loader 2.8s linear infinite;
+    -o-animation: reverse-loader 2.8s linear infinite;
+    animation: reverse-loader 2.8s linear infinite;
 }
 
 @-webkit-keyframes loaders {
@@ -103,5 +104,31 @@ img {
         -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
         transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes reverse-loaders {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes reverse-loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        transform: rotate(-360deg);
     }
 }
