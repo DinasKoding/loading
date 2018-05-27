@@ -40,8 +40,8 @@ img {
 }
 
 #batik{
-    margin-top: -1vw;
-    margin-left: -0.2vw;
+    margin-top: -1.04vw;
+    /* margin-left: 0vw; */
     -webkit-animation: loader 2s linear infinite;
     -moz-animation: loader 2s linear infinite;
     -o-animation: loader 2s linear infinite;
